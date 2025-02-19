@@ -9,26 +9,22 @@ e a média desses números.
 */
 public class Ex3_MaiorEMedia {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        int numero, soma = 0, maiorNumero = Integer.MIN_VALUE;
 
-        int numero;
-        int maior = 0;
-        int soma = 0;
+        Scanner scanner = new Scanner(System.in);
 
-        int count = 0;
-        do {
-            System.out.println("Número: ");
-            numero = scan.nextInt();
+        for (int i = 1; i < 6; i++) {
+            System.out.print("Digite o número " + i + ": ");
+            numero = scanner.nextInt();
 
-            soma = soma + numero;
+            soma += numero;
 
-            if (numero > maior) maior = numero;
+            if (numero > maiorNumero) {
+                maiorNumero = numero;
+            }
+        }
 
-            count = count + 1;
-        } while(count < 5);
-
-        System.out.println("Maior: " + maior);
-        System.out.println("Média: " + (soma/5));
-
+        System.out.println("Maior número: " + maiorNumero);
+        System.out.println("Média: " + soma / 5);
     }
 }
