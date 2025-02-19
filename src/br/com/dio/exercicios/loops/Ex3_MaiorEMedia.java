@@ -14,7 +14,7 @@ public class Ex3_MaiorEMedia {
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 1; i < 6; i++) {
-            System.out.print("Digite o número " + i + ": ");
+            System.out.print("Digite o " + i + " número: ");
             numero = scanner.nextInt();
 
             soma += numero;

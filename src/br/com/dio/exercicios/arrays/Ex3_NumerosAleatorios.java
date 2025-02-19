@@ -31,10 +31,5 @@ public class Ex3_NumerosAleatorios {
         for (int numero : numerosAleatorios) {
             System.out.print((numero+1) + " ");
         }
-
-
-
-
     }
-
 }

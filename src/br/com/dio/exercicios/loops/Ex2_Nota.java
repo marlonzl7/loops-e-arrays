@@ -18,7 +18,7 @@ public class Ex2_Nota {
         nota = scanner.nextInt();
 
         while (nota < 0 || nota > 10) {
-            System.out.println("Nota inválida. Tente novamente: ");
+            System.out.print("Nota inválida. Tente novamente: ");
             nota = scanner.nextInt();
         }
     }
